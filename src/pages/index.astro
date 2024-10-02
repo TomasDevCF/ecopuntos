@@ -3,21 +3,31 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="EcoPuntos | Nunca fue tan facil reciclar">
-  <main class="max-w-screen-lg h-screen py-6">
+  <main class="max-w-screen-lg py-6 px-2">
     <h1 class="text-black font-normal text-center">
       Bienvenid@ a <span class="text-primary font-semibold">Eco</span>Puntos ♻️
     </h1>
     <h2 class="text-black font-normal text-center">
       Encuentra todos los puntos de reciclaje en la Ciudad de Córdoba
     </h2>
+    <p class="text-red-600/80 pt-2 font-normal text-center text-sm">
+      La web es nueva, cualquier correccion, consejo o recomendacion es
+      bienvenida.
+    </p>
     <div class="flex w-full justify-center pt-2">
-      <a href="/map"
+      <a
+        href="/map"
         class="text-primary border-primary border transition-colors px-2 py-1 font-medium rounded-md hover:text-white hover:bg-primary"
         >Encuentra tu EcoPunto</a
       >
     </div>
-    <div class="w-full flex justify-center pt-10">
-      <div id="reciclar" class="flex flex-col items-center max-w-[50%]">
+    <div
+      class="w-full flex sm:flex-row flex-col sm:gap-y-0 gap-y-4 justify-center pt-10"
+    >
+      <div
+        id="reciclar"
+        class="flex flex-col items-center max-w-full sm:max-w-[50%]"
+      >
         <span
           class="text-3xl border border-primary size-20 flex justify-center items-center rounded-full"
           >♻️</span
@@ -65,7 +75,10 @@ import Layout from "../layouts/Layout.astro";
           </li>
         </ul>
       </div>
-      <div id="comousar" class="flex flex-col items-center max-w-[50%]">
+      <div
+        id="comousar"
+        class="flex flex-col items-center max-w-full sm:max-w-[50%]"
+      >
         <span
           class="text-3xl border border-primary size-20 flex justify-center items-center rounded-full"
           >🗺️</span

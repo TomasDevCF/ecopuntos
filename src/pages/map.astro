@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Mapa de EcoPuntos">
+  <div id="map" class="relative">
+    <form
+      class="p-4 bg-white rounded-lg absolute top-5 right-5 z-[401] flex flex-col gap-y-1"
+    >
+      <label>
+        <input checked type="radio" name="trash-type" value="Todos" /> Todos
+      </label>
+      <label>
+        <input type="radio" name="trash-type" value="Residuos Secos" /> Residuos
+        Secos
+      </label>
+      <label>
+        <input type="radio" name="trash-type" value="Residuos Húmedos" /> Residuos
+        Húmedos
+      </label>
+    </form>
+  </div>
+</Layout>
+
+<style>
+  #map {
+    height: calc(100vh - 66px);
+    width: 100%;
+  }
+</style>
